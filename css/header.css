@@ -61,6 +61,7 @@ header {
 /* para sacar el link de las a */
 .nav-bar {
     padding: 10px 0;
+    display: none;
 
     /* Ul */
     ul {
@@ -79,4 +80,14 @@ header {
         }
 
     }
+}
+/* TABLET */
+@media(min-width: 768px){
+    .nav-bar{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+
 }

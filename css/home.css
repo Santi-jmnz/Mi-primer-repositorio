@@ -7,17 +7,84 @@
     font-size: 12px;
 }
 
-h2{
-    font-size: 24px;
+main {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.banner {
+    width: 100%;
+}
+
+.section-main {
+    width: 90%;
+}
+
+.articulo {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0 10px;
+
+}
+
+.imagenes-main {
+    width: 100%;
+}
+
+.circulo-camion {
+    border: 1px solid #39b54a;
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.camion {
+    color: #39b54a;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.div-precio-descuento {
+    border-top: 1px solid #ebebeb;
+    text-align: start;
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: start;
+}
+
 
 .precios {
     font-size: 18px;
 }
-h3{
+
+h3 {
     font-size: 16px;
+    display: none;
 }
-.descuento{
+
+.descuento {
     font-size: 16px;
     color: #39b54a;
+}
+
+/* TABLET */
+@media(min-width: 768px) {
+    .articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    h3{
+        display: block;
+    }
+
+
 }
