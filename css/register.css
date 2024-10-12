@@ -1,0 +1,47 @@
+.class-section {
+    background-color: #ebebeb;
+    text-align: center;
+
+    h2 {
+        padding: 10px;
+    }
+}
+
+.div-input,
+.button-enviar,
+.button-cancelar {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.bold {
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.checkbox {
+    text-align: left;
+    margin: 10px;
+}
+
+.perfil-input-label {
+    text-align: center;
+    width: 100%;
+}
+
+.button-enviar {
+    text-align: center;
+    color: white;
+    background-color: #1259c3;
+}
+
+.button-cancelar {
+    text-align: center;
+    color: white;
+    background-color: #666;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+} */
+
+/*header*/
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+/* Tamaño de logo */
+
+.logo-buscador-icono {
+    display: flex;
+    flex-direction: column;
+
+    #logo {
+        width: 50%;
+    }
+
+    /*separar buscador*/
+    input {
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    button {
+        width: 10%;
+    }
+
+    /* centro compra en cuotas*/
+    .header-p-compra {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.burger-menu {
+    color: #ffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-menu i {
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* tamaño del burger menu */
+.icono-burger {
+    font-size: 20px;
+}
+
+/* para sacar el link de las a */
+.nav-bar {
+    padding: 10px 0;
+
+    /* Ul */
+    ul {
+        list-style: none;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* ul1 y ul2 */
+    li {
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+}
