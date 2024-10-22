@@ -51,7 +51,9 @@
     flex-direction: column;
     padding: 12px 0 ;
     background-color: white;
+
 }
+
 
 /* caja que contiene a la imagen */
 .articulo-imagen {
@@ -82,11 +84,13 @@
     bottom: -15px;
     position: absolute;
     right: 10px;
+   
 }
 
 /* icono del camion */
 .camion {
     color: #39b54a;
+    transition: transform 0.3s ;
 }
 
 /* caja de la descripcion del producto */
@@ -116,6 +120,55 @@
     color: #39b54a;
     width: 70%;
 }
+.articulo-titulo{
+    transition: opacity 0.3s ease;
+}
+
+.footer-home {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-icono {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.descripcion-footer {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contenedor h4 {
+    font-size: 16px;
+}
+
+.copyright {
+    text-align: start;
+    color: #666;
+    font-size: 12px;
+}
+
 
 
 /* TABLET */
@@ -129,7 +182,9 @@
     
 .articulo{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
 } 
+
 
 }
 
@@ -139,8 +194,32 @@
     .section-oferta-contenedor{
         width: 100%;
     }
-    .articulo{
+    .articulo:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    } 
+        transition: 1s;
+    }
+    .articulo-titulo {
+        font-size: 16px;
+        opacity: 0;
+    }
+
+    .articulo:hover .articulo-titulo {
+        opacity: 1;
+    }
+    .articulo:hover .camion{
+        transform: rotate(-90deg) ;
+    }
+    .footer-home{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-icono:hover{
+        color: black ;
+
+    }
+    .footer-section{
+        width: 30%;
+    }
 
 }
