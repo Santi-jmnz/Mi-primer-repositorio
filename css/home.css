@@ -7,84 +7,140 @@
     font-size: 12px;
 }
 
-main {
-    margin: 0;
+.main-home {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+    
 }
 
+
+/* porcentaje que ocupa el banner */
 .banner {
     width: 100%;
 }
 
-.section-main {
+/* porcentaje que ocupa el section del main */
+.section-ultima-visita,
+.section-oferta {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 0;
 }
-
+.section-ultima-visita-titulo,
+.section-oferta-titulo{
+    font-size: 24px;
+    display: flex;
+    align-self: start;
+}
+.section-ultima-visita-contenedor,
+.section-oferta-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+/* caja del producto */
 .articulo {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0 ;
     background-color: white;
-    padding: 15px;
-    margin: 10px 0 10px;
-
 }
 
-.imagenes-main {
+/* caja que contiene a la imagen */
+.articulo-imagen {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+}
+.articulo-contenedor-imagen{
+    width: 200px;
+}
+
+.articulo-contenedor-imagen img{
     width: 100%;
 }
 
-.circulo-camion {
+/* caja del icono camion */
+.articulo-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #39b54a;
-    margin-left: 10px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    margin-top: 10px;
+    bottom: -15px;
+    position: absolute;
+    right: 10px;
 }
 
+/* icono del camion */
 .camion {
     color: #39b54a;
-    text-align: center;
-    margin-top: 8px;
-    margin-left: 8px;
 }
 
-.div-precio-descuento {
-    border-top: 1px solid #ebebeb;
-    text-align: start;
-    margin-left: 10px;
+/* caja de la descripcion del producto */
+.articulo-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-h2 {
-    font-size: 24px;
-    text-align: start;
+/* caja que contiene al precio y al descuento */
+.articulo-renglon {
+    display: flex;
+    padding: 2px 4px;
+    gap: 20px;
 }
 
-
+/* clase del precio */
 .precios {
     font-size: 18px;
+    width: 30%;
 }
 
-h3 {
-    font-size: 16px;
-    display: none;
-}
-
+/* clase del decuento */
 .descuento {
     font-size: 16px;
     color: #39b54a;
+    width: 70%;
 }
 
+
 /* TABLET */
-@media(min-width: 768px) {
-    .articulo {
+@media(min-width: 768px) and (max-width:1023px) {
+    .section-ultima-visita-contenedor,
+    .section-oferta-contenedor{
+    
+        justify-content: space-between;
+        width: 65%;
+    }
+    
+.articulo{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+} 
+
+}
+
+/* DESCKTOP */
+@media(min-width: 1023px) {
+    .section-ultima-visita-contenedor,
+    .section-oferta-contenedor{
+        width: 100%;
+    }
+    .articulo{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
-    }
-    h3{
-        display: block;
-    }
-
+    } 
 
 }

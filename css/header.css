@@ -16,27 +16,39 @@ header {
 
 .logo-buscador-icono {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 5px;
+}
+#logo {
+    width: 50%;
+}
 
-    #logo {
-        width: 50%;
-    }
+/*separar buscador*/
+.buscador-input {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px; 
+}
+.Buscador-header{
+    border: solid 1px white;
+    border-radius: 5px 0px 0px 5px ;
+}
 
-    /*separar buscador*/
-    input {
-        margin-top: 10px;
-        width: 50%;
-    }
+.boton {
+    width: 10%;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px ; 
+    border: none;
+}
 
-    button {
-        width: 10%;
-    }
-
-    /* centro compra en cuotas*/
-    .header-p-compra {
-        text-align: center;
-        margin-top: 10px;
-    }
+/* centro compra en cuotas*/
+.header-p-compra {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
 }
 
 .burger-menu {
@@ -63,31 +75,76 @@ header {
     padding: 10px 0;
     display: none;
 
-    /* Ul */
-    ul {
-        list-style: none;
-        padding: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+}
+/* Ul */
+ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-    /* ul1 y ul2 */
-    li {
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-    }
+/* ul1 y ul2 */
+.header-a-lista {
+    text-decoration: none;
+    color: black;
 }
 /* TABLET */
 @media(min-width: 768px){
+    .logo-buscador-icono {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #logo {
+        width: 30%;
+    }
+    .buscador-input {
+        width: 30%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    .Buscador-header{
+        border: solid 1px white;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .boton {
+        width: 10%;
+        background-color: white;
+        border: none;
+        
+    
+    }
+    .header-p-compra {
+        display: flex;
+        width: 33%;
+        padding: 0;
+        align-items: center;
+    
+    }
     .nav-bar{
         display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .burger-menu{
         display: none;
     }
-
+    .ofertas-bar{
+        display: flex;
+        gap: 20px;
+    }
+    .user-bar{
+    display: flex;
+    gap: 20px;
+    }
 }
